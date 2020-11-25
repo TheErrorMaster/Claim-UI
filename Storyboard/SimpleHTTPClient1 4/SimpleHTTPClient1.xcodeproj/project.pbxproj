@@ -8,10 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		062E894F256C83500059D456 /* UIEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062E894E256C83500059D456 /* UIEdit.swift */; };
+		0671A816256EEF690085880F /* ClaimService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0671A815256EEF690085880F /* ClaimService.swift */; };
 		D27F8DFB2548FC9D0025712A /* FieldValueViewGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27F8DFA2548FC9D0025712A /* FieldValueViewGenerator.swift */; };
 		D27F8DFD254902EA0025712A /* PersonDetailSectionGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27F8DFC254902EA0025712A /* PersonDetailSectionGenerator.swift */; };
-		D27F8DFF254C6E600025712A /* LabelColumnGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27F8DFE254C6E600025712A /* LabelColumnGenerator.swift */; };
-		D27F8E01254C70B20025712A /* ValueColumnGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27F8E00254C70B20025712A /* ValueColumnGenerator.swift */; };
 		D282F13F252D4F510082965C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D282F13E252D4F510082965C /* AppDelegate.swift */; };
 		D282F141252D4F510082965C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D282F140252D4F510082965C /* ViewController.swift */; };
 		D282F144252D4F510082965C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D282F142252D4F510082965C /* Main.storyboard */; };
@@ -22,10 +21,9 @@
 
 /* Begin PBXFileReference section */
 		062E894E256C83500059D456 /* UIEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIEdit.swift; sourceTree = "<group>"; };
+		0671A815256EEF690085880F /* ClaimService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaimService.swift; sourceTree = "<group>"; };
 		D27F8DFA2548FC9D0025712A /* FieldValueViewGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldValueViewGenerator.swift; sourceTree = "<group>"; };
 		D27F8DFC254902EA0025712A /* PersonDetailSectionGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailSectionGenerator.swift; sourceTree = "<group>"; };
-		D27F8DFE254C6E600025712A /* LabelColumnGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelColumnGenerator.swift; sourceTree = "<group>"; };
-		D27F8E00254C70B20025712A /* ValueColumnGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueColumnGenerator.swift; sourceTree = "<group>"; };
 		D282F13B252D4F510082965C /* SimpleHTTPClient1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleHTTPClient1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D282F13E252D4F510082965C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D282F140252D4F510082965C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,9 +73,8 @@
 				D282F14A252D4F580082965C /* Info.plist */,
 				D27F8DFA2548FC9D0025712A /* FieldValueViewGenerator.swift */,
 				D27F8DFC254902EA0025712A /* PersonDetailSectionGenerator.swift */,
-				D27F8DFE254C6E600025712A /* LabelColumnGenerator.swift */,
-				D27F8E00254C70B20025712A /* ValueColumnGenerator.swift */,
 				062E894E256C83500059D456 /* UIEdit.swift */,
+				0671A815256EEF690085880F /* ClaimService.swift */,
 			);
 			path = SimpleHTTPClient1;
 			sourceTree = "<group>";
@@ -153,13 +150,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D27F8DFF254C6E600025712A /* LabelColumnGenerator.swift in Sources */,
 				D282F141252D4F510082965C /* ViewController.swift in Sources */,
-				D27F8E01254C70B20025712A /* ValueColumnGenerator.swift in Sources */,
 				062E894F256C83500059D456 /* UIEdit.swift in Sources */,
 				D27F8DFD254902EA0025712A /* PersonDetailSectionGenerator.swift in Sources */,
 				D282F13F252D4F510082965C /* AppDelegate.swift in Sources */,
 				D282F151252D4FC70082965C /* PersonService.swift in Sources */,
+				0671A816256EEF690085880F /* ClaimService.swift in Sources */,
 				D27F8DFB2548FC9D0025712A /* FieldValueViewGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

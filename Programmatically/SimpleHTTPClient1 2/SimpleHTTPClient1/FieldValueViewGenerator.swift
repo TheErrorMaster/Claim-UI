@@ -1,10 +1,6 @@
-//
-//  FieldValueViewGenerator.swift
-//  SimpleHTTPClient1
-//
-//  Created by ITLoaner on 10/27/20.
-//  Copyright © 2020 ITLoaner. All rights reserved.
-//
+// Mauricio Macias
+// mauricio.macias@csu.fullerton.edu
+// 890741622
 
 import UIKit
 
@@ -27,17 +23,8 @@ class FieldValueViewGenerator {
         lbl.sizeToFit()
         stackView.addArrangedSubview(lbl)
         let val = UITextField()
-//        val.text = "bro"
-//        val.placeholder = lblName + "Entry"
-//        val.backgroundColor = UIColor.lightGray
         val.borderStyle = .roundedRect
         stackView.addArrangedSubview(val)
-        //
-        //lbl.setContentHuggingPriority(.defaultHigh, for: .horizontal)
-        //val.setContentHuggingPriority(.defaultLow, for: .horizontal)
-        //lbl.setContentCompressionResistancePriority(.defaultHigh, for: .horizontal)
-        //val.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
-        //
         return stackView
     }
 }

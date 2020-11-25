@@ -1,29 +1,11 @@
-//
-//  PersonDetailSectionGenerator.swift
-//  SimpleHTTPClient1
-//
-//  Created by ITLoaner on 10/27/20.
-//  Copyright © 2020 ITLoaner. All rights reserved.
-//
+// Mauricio Macias
+// mauricio.macias@csu.fullerton.edu
+// 890741622
 
 import UIKit
 
 class PersonDetailSectionGenerator {
-/*    func generate() -> UIStackView {
-        let stackView = UIStackView()
-        stackView.axis = .horizontal
-        stackView.distribution = .fill
-        stackView.spacing = 5
-        let lGenerator = LabelColumnGeneartor()
-        let lView = lGenerator.generate()
-        stackView.addArrangedSubview(lView)
-        let cGenerator = ValueColumnGenerator()
-        let vView = cGenerator.generate()
-        stackView.addArrangedSubview(vView)
-        lView.setContentHuggingPriority(.defaultHigh, for: .horizontal)
-        vView.setContentHuggingPriority(.defaultLow, for: .horizontal)
-        return stackView
-    }  */
+    
     func generate() -> UIStackView {
         let stackView = UIStackView()
         stackView.axis = .vertical
@@ -38,9 +20,6 @@ class PersonDetailSectionGenerator {
         vGenerator = FieldValueViewGenerator(n:"Date")
         sView = vGenerator.generate()
         stackView.addArrangedSubview(sView)
-//        vGenerator = FieldValueViewGenerator(n:"SSN")
-//        sView = vGenerator.generate()
-//        stackView.addArrangedSubview(sView)
         return stackView
     }
 }
@@ -57,7 +36,6 @@ class labelSectionGenerator {
         let lbl = UILabel()
         lbl.text = "Please Enter Claim Information"
         lbl.textAlignment = .center
-//        lbl.backgroundColor = UIColor.white
         stackView.addArrangedSubview(lbl)
         return stackView
     }
@@ -138,11 +116,6 @@ class PersonDetailScreenGenerator {
         }
         print("UITextField references created.")
         
-        // Make UITextField readonly
-//        for v in vals {
-//            v.isUserInteractionEnabled = false
-//        }
-        //
         for sv in buttonSecView.arrangedSubviews {
             let btn = sv as! UIButton
             if btn.titleLabel?.text == "ADD" {
@@ -176,7 +149,6 @@ class PersonDetailScreenGenerator {
         }
         //
         for i in 0...vals.count-1 {
-            //vals[i].setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
             vals[i].setContentHuggingPriority(.defaultLow, for: .horizontal)
         }
         
@@ -193,10 +165,8 @@ class PersonDetailScreenGenerator {
     func setButtonSecConstraints() {
         buttonSecView.translatesAutoresizingMaskIntoConstraints = false
         let tpConst = buttonSecView.topAnchor.constraint(equalTo: detailSecView.bottomAnchor, constant: 25)
-//        let tlConst = buttonSecView.leadingAnchor.constraint(equalTo: root.safeAreaLayoutGuide.leadingAnchor)
         let trConst = buttonSecView.trailingAnchor.constraint(equalTo: root.safeAreaLayoutGuide.trailingAnchor)
         tpConst.isActive = true
-//        tlConst.isActive = true
         trConst.isActive = true
     }
     

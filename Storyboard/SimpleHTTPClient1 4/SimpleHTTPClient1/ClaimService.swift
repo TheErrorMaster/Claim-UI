@@ -7,29 +7,15 @@ struct Claim : Codable {
 
 class ClaimService {
 
-    init(vc : ViewController) {
+    init(vc : UIEditorViewController) {
         viewController = vc
     }
     
-    var viewController : ViewController
+    var viewController : UIEditorViewController
+    
     var personList : [Claim] = [Claim]()
     var currentIndx : Int = 0
     var successHttp : Bool?
-
-    func getNext() -> Claim {
-        currentIndx = currentIndx + 1
-        return personList[currentIndx]
-    }
-    
-    func isLastEntry() -> Bool {
-        if currentIndx == personList.count - 1 {
-            return true
-        } else {
-            return false
-        }
-        
-    }
-    
     
     func addClaim(pObj : Claim) {
         // Implement logic using Async HTTP client API (POST method)
@@ -47,13 +33,12 @@ class ClaimService {
                 let respStr = String(bytes: resp, encoding: .utf8)
 //                self.ps = respStr
 //                print("The response data sent from the server is \(respStr!)")
+//                self.successHttp = true
+//                OperationQueue.main.addOperation {
+//                    self.UIE
+//                }
                 self.successHttp = true
                 print("The Person List : \(pObj)")
-                //
-                OperationQueue.main.addOperation {
-                    self.viewController.refreshScreen(pObj: pObj)
-                }
-                //
             } else if let respError = error {
                 print("Server Error : \(respError)")
                 self.successHttp = false
@@ -71,7 +56,7 @@ class ClaimService {
             (data, response, error) in
             if let respData = data {
                 // data is of Data type
-                //et respStr = String(data: respData, encoding: .utf8)
+                let respStr = String(data: respData, encoding: .utf8)
                 //print("The response data is \(respStr!)")
 //                self.personList = try! JSONDecoder().decode([Claim].self, from: respData)
 //                print("The Person List : \(self.personList)")

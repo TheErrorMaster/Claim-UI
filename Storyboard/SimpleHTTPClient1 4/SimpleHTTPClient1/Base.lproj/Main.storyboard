@@ -74,9 +74,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="fnVal" destination="2Gj-sg-Jqy" id="15C-Og-mb5"/>
-                        <outlet property="lnVal" destination="4BJ-RA-zLK" id="e8l-Yb-yUW"/>
+                        <outlet property="dateVal" destination="4BJ-RA-zLK" id="DX8-Dx-Z90"/>
                         <outlet property="stLbl" destination="3Fn-JX-oXL" id="WLm-VP-Y0F"/>
+                        <outlet property="titVal" destination="2Gj-sg-Jqy" id="qOh-yI-qMJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
