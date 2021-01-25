@@ -18,7 +18,7 @@ class UIEditorViewController: UIViewController {
             if pService.successHttp == false {
                 stLbl.text = "Claim (" + (titVal.text)! + ") was not successfully created"
             } else {
-                stLbl.text = "Claim (" + (titVal.text)! + ") failed to be created"
+                stLbl.text = "Claim (" + (titVal.text)! + ") was successfully created"
             }
             titVal.text = ""
             dateVal.text = ""

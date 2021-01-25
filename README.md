@@ -25,3 +25,6 @@ For this app user will be asked to add a Claim Title and Date inside UITextField
 After the data in inputed, the user will have to press the Add UIButton to send the data to our server. <br/>
 When data is sent the UITextField will be cleared.  <br/>
 When the data is sent a status message will appear displaying if the project was successful or not. 
+
+## 4 Demostration
+![](ios.png)
