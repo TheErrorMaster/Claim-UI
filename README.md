@@ -11,12 +11,12 @@ Firstly, Install my Claim Server in github. <br/>
 Inside <br/>
 \Source\Claim-IOS\Database.swift <br/>
 Modify <br/>
-`let dbname = "/Users/mauriciomacias/desktop/ios/data/ClaimDB.sqlite" <br />` <br/>
+`let dbname = "/Users/mauriciomacias/desktop/ios/data/ClaimDB.sqlite"` <br/>
 to your own file path <br/>
 `let dbname = "/path/ClaimDB.sqlite"` <br/>
 Turn on the server now <br/>
 
-Then install my Github repository. <br/>
+Then install this Github repository. <br/>
 For this project I created two projects that I first programmed the GUI and another where I used storyboard to create the GUI <br/>
 Both projects create the same app, just programmed differently. <br/>
 
